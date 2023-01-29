@@ -17,6 +17,7 @@ body {
 
 input {
 	cursor: pointer;
+	caret-color: transparent;
 	direction: ltr;
 	text-align: center;
 	margin-top: 5%;
@@ -26,7 +27,7 @@ input {
 	color: #e9f8e5;
 	font-family: 'Exo 2', arial, helvetica, sans-serif;
 	font-size: 3rem;
-	outline: none;
+	outline-color: #FF8B13;
 	text-transform: uppercase;
 }
 
@@ -49,6 +50,7 @@ pre {
 }
 
 .letter {
+	background-color: #66444455;
 	text-align: center;
 	width: 1.2em;
 	height: 1.3em;
@@ -58,6 +60,7 @@ pre {
 }
 
 .space {
+	background-color: transparent;
 	border: none;
 }
 
@@ -91,16 +94,16 @@ pre {
 .win,
 .lose {
 	padding: 1rem;
-	border: 2px solid red;
+	border: 2px solid #E0144C;
 	border-radius: 1rem;
-	color: red;
+	color: #E0144C;
 	font-size: 3rem;
 	font-weight: bold;
 }
 
 .win {
-	border: 2px solid green;
-	color: green;
+	border: 5px groove #CDE99055;
+	color: #CDE990;
 }
 
 .newGame {
