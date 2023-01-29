@@ -35,7 +35,7 @@ function createTable($pdo) {
 	fclose($phrases);
 }
 
-//: check for new/removed phrases (boolean)
+//: check for new/removed phrases in .txt file (boolean)
 function checkContent ($cnt) {
 	$dblines = $cnt->fetch(PDO::FETCH_ASSOC);
 	$dblines = $dblines["count(*)"];

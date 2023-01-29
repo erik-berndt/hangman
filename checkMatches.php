@@ -8,18 +8,29 @@ if (isset($_POST['guess'])) {
 		header("Refresh:0");
 	}
 
-//: check letter match
-if (in_array($guess, $letters) && !in_array($guess, $_SESSION['right'])) {
-  array_push($_SESSION['right'], $guess);
-} else if (!in_array($guess, $letters) && !in_array($guess, $_SESSION['wrong'])) {
-  array_push($_SESSION['wrong'], $guess);
+  //: check letter match
+  if (in_array($guess, $letters) && !in_array($guess,     $_SESSION['right'])) {
+    array_push($_SESSION['right'], $guess);
+  } else if (!in_array($guess, $letters) && !in_array($guess, $_SESSION['wrong']) && $guess != '') {
+    array_push($_SESSION['wrong'], $guess);
+  }
 }
+
+//: full solution given
+if (isset($_POST['solution'])) {
+  $res = strtoupper(trim($_POST['solution']));
+  if ($res == $_SESSION['randPhrase']) {
+    $_SESSION['right'] = str_split($res);
+  } else if (sizeof(str_split($res)) > 1 && $res != $_SESSION['randPhrase']){
+    array_push($_SESSION['wrong'], 'x');
+  }
 }
 
 //: update score variables
 $right   = sizeof($_SESSION['right']);
 $wrong   = sizeof($_SESSION['wrong']);
 $total   = $right + $wrong;
+
 
 //: check letters  - create $result for final comparison
 echo "<div class='phrase'>";
@@ -41,6 +52,7 @@ echo "<div class='letter'>$letter</div>";
 $result = $result . $letter;
 }
 echo "</div>";
+
 
 echo "<div class='letterblock'>";
 if ($wrong > 4) {

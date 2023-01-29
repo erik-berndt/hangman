@@ -33,7 +33,7 @@ echo "
 	<div class='count'>
 		<div class='value'>🍺 $right</div>
 		<div class='value'> Total: $total</div>
-		<div class='value'> 💀 $wrong</div>
+		<div class='value'>💀 $wrong</div>
  </div>";
 
 
@@ -41,7 +41,9 @@ echo "
 			<div>	
 				<form method="POST">
 					<input id="guess" type="text" name="guess"  autocomplete="off" size="1" 
-							minlength="1" maxlength="1" placeholder="🤔" autofocus required><br>
+							minlength="1" maxlength="1" placeholder="🤔" autofocus><br>
+				 	<input id="solution" type="text" name="solution" autocomplete="off" placeholder="meine Lösung">
+					<button type="submit" hidden></button> 
 				</form>
 			</div>
 		</div>
