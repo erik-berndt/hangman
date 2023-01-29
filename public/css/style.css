@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+html {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('../images/hang2.jpg');
+  background-size: cover;
+	background-attachment: fixed;
+	font-size: 1rem;
+	background-color: #444;
+	color: #E4C988;
+	font-family: 'Exo 2', arial, helvetica, sans-serif;
+}
+
+input {
+	margin-top: 5%;
+	padding: .5rem;
+	border-radius: 1rem;
+	background-color: #44444466;
+	color: #e9f8e5;
+	font-family: 'Exo 2', arial, helvetica, sans-serif;
+	font-size: 3rem;
+	outline: none;
+	text-transform: uppercase;
+}
+
+pre {
+	margin: 0;
+	padding: 0;
+}
+
+.phrase {
+	margin-top: 5%;
+	font-size: 2.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+.letter {
+	text-align: center;
+	width: 1.2em;
+	height: 1.3em;
+	margin: 3px;
+	border: 1px solid #E4C98866;
+	border-radius: .5rem;
+}
+
+.space {
+	border: none;
+}
+
+.letterblock {
+	color: #E4C988;
+	margin-top: 5%;
+	display: flex;
+	font-size: 2.3rem;
+	flex-direction: column;
+	align-items: center;
+}
+
+.blockline {
+	display: flex;
+	flex-direction: row;
+}
+
+.blockletter {
+	letter-spacing: 5px;
+}
+
+.count {
+	display: flex;
+	justify-content: space-between;
+}
+
+.value {
+	margin: 2rem 2rem;
+}
+
+.win,
+.over {
+	padding: 1rem;
+	border: 2px solid red;
+	border-radius: 1rem;
+	color: red;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.win {
+	border: 2px solid green;
+	color: green;
+}
