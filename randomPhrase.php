@@ -38,7 +38,7 @@ function createTable($pdo) {
 //: check for new/removed phrases in .txt file (boolean)
 function checkContent ($cnt) {
 	$dblines = $cnt->fetch(PDO::FETCH_ASSOC);
-	$dblines = $dblines["count(*)"];
+	$dblines = $dblines["COUNT(*)"];
 	$lines = count(file("./appdata/hangPhrases.txt"));
 	return $dblines == $lines;
 }

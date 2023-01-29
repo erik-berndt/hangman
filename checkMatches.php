@@ -57,11 +57,25 @@ echo "</div>";
 echo "<div class='letterblock'>";
 if ($wrong > 4) {
   //: you lose
-  echo "<div class='over'>game over</div>";
-  session_destroy();
+  echo "<div class='lose'>
+          game over
+        </div>
+        <div class='newGame'>
+          <span>
+            neues Spiel? # eingeben!
+          <span>
+        </div>";
+session_destroy();
   //: you win
 } else if ($result == $_SESSION['randPhrase']) {
-  echo "<div class='win'>heyho</div>";
+  echo "<div class='win'>
+          Yeeehaw!
+        </div>
+        <div class='newGame'>
+          <span>
+            neues Spiel? # eingeben!
+          <span>
+        </div>";
   session_destroy();
 } else {
 //: create letterblock

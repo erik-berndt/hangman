@@ -7,3 +7,44 @@ syntax highlighting
 relative pfadangaben
 quelltext
 entwicklungsumgebung
+computational thinking
+computer science
+digital citizen
+digital footprint
+event handler
+for loop
+function definition
+pattern matching
+Parameter
+persistence
+search engine
+trustworthy
+while loop
+Coding terminology
+Arrays
+Arithmetic operators
+Assignment operators
+Augmented reality
+Binary numbers
+Block Coding
+Camel case
+Coding languages 
+Computer program
+Conditional statements
+Else statements
+Else if statements
+If statements
+Increment and decrement operators
+Integrated Development Environment 
+JavaScript
+Jupyter Notebook
+Linux
+Main function
+Machine learning
+Neural networks
+PyCharm
+Python
+Statement
+Ubuntu
+Variable types
+Visual Studio

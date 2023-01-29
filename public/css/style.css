@@ -85,11 +85,11 @@ pre {
 }
 
 .value {
-	margin: 2rem 4rem;
+	margin: 2rem 6rem;
 }
 
 .win,
-.over {
+.lose {
 	padding: 1rem;
 	border: 2px solid red;
 	border-radius: 1rem;
@@ -101,4 +101,10 @@ pre {
 .win {
 	border: 2px solid green;
 	color: green;
+}
+
+.newGame {
+	margin-top: 2rem;
+	font-size: 1rem;
+	color: #FF8B13;
 }

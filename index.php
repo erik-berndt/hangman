@@ -3,6 +3,7 @@
 <html>
   <head>
 	<link rel="stylesheet" type="text/css" href="public/css/style.css">
+	<link rel="icon" type="image/x-icon" href="public/images/favicon.ico">
 		<title>pampelguess</title>
   </head>
 	<body>
@@ -31,10 +32,10 @@ include('./checkMatches.php');
 //: your score
 echo "
 	<div class='count'>
-		<div class='value'>🍺 $right</div>
+		<div class='value'>$wrong 💀</div>
 		<div class='value'> Total: $total</div>
-		<div class='value'>💀 $wrong</div>
- </div>";
+		<div class='value'>🍺 $right</div>
+	</div>";
 
 
 ?>
