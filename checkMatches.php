@@ -69,9 +69,14 @@ $i = 0;
 foreach($alpha as $abc) {
   if ($i % 7 == 0) {
     echo "<div class='blockline'>";
+    $abc = ' ' . $abc;
   }
-  if (in_array($abc, $_SESSION['wrong']) || in_array($abc, $_SESSION['right'])) {
+  if (in_array(trim($abc), $_SESSION['wrong']) || in_array(trim($abc), $_SESSION['right'])) {
+    if ($i % 7 == 0) {
+      $abc = ' 📌';
+    } else {
     $abc = '📌';
+    }
   } else {
     $abc = $abc . ' ';
   }

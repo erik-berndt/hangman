@@ -40,10 +40,16 @@ echo "
 ?>
 			<div>	
 				<form method="POST">
-					<input id="guess" type="text" name="guess"  autocomplete="off" size="1" 
+				<div class="form">	
+					<div>
+						<input id="guess" type="text" name="guess"  autocomplete="off" size="1" 
 							minlength="1" maxlength="1" placeholder="🤔" autofocus><br>
-				 	<input id="solution" type="text" name="solution" autocomplete="off" placeholder="meine Lösung">
+					</div>
+					<div>
+				 		<input id="solution" type="text" name="solution" autocomplete="off" placeholder="ich weiss es">
+					</div>
 					<button type="submit" hidden></button> 
+				</div>
 				</form>
 			</div>
 		</div>
