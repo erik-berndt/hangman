@@ -53,7 +53,6 @@ $result = $result . $letter;
 }
 echo "</div>";
 
-
 echo "<div class='letterblock'>";
 if ($wrong > 4) {
   //: you lose
