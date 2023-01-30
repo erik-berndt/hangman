@@ -16,6 +16,7 @@ body {
 }
 
 input {
+	background-color: #66444455;
 	cursor: pointer;
 	caret-color: transparent;
 	direction: ltr;

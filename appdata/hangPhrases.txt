@@ -1,7 +1,7 @@
 programmiersprache
 fliesskommazahlen
 just in time
-ordnerstruktur
+ornerstruktur
 serverbasierte scripte
 syntax highlighting
 relative pfadangaben
@@ -48,3 +48,32 @@ Statement
 Ubuntu
 Variable types
 Visual Studio
+linux mint 
+cinnamon
+manpages
+vim ediitor
+dateiverwaltung
+virtualization
+hypervisor
+system ressources
+central processing unit
+graphics processing unit
+mass surveillance
+artificial intelligence
+man in the middle
+ransomware
+keylogger
+social networks
+konrad zuse
+bill gates
+steve jobs
+linus torwalds
+internet protocol
+hyper text markup language
+hyper text transfer protocol
+cascading style sheets
+three way handshake
+acknowledgement
+dystopian world
+war games
+
