@@ -35,7 +35,7 @@ $total   = $right + $wrong;
 //: check letters  - create $result for final comparison
 echo "<div class='phrase'>";
 foreach($letters as $letter) {
-if ($letter == ' ') {
+if ($letter == ' ' || $letter == '-') {
   echo "<div class='letter space'>$letter</div>";
   $result = $result . $letter;
   continue;

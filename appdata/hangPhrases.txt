@@ -1,12 +1,5 @@
-programmiersprache
-fliesskommazahlen
 just in time
-ornerstruktur
-serverbasierte scripte
 syntax highlighting
-relative pfadangaben
-quelltext
-entwicklungsumgebung
 computational thinking
 computer science
 digital citizen
@@ -76,4 +69,31 @@ three way handshake
 acknowledgement
 dystopian world
 war games
-
+object oriented programming
+source code
+structured query language
+dictionary
+nested arrays
+application programming interface
+java script object notation
+apache server
+bootstrap
+refactoring
+command-line
+cybersecurity
+data science
+framework
+frontend and backand
+full stack developer
+github
+http request
+inheritance
+lamp stack
+mongodb
+open-source
+ruby on rails
+user experience
+user interface
+version control
+whitelisting
+blacklisting
