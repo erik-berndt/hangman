@@ -1,12 +1,13 @@
 <?php
+
 //: set variables for database connection data
 $host     = 'localhost';
 $db       = 'games';
 $user     = 'erik';
 $password = '321null';
 
-function connect($host, $db, $user, $password)
-	{
+function connect($host, $db, $user, $password){
+
 		$con = "mysql:host=$host; dbname=$db; charset=UTF8";
 
 		//: establish db-connection - catsh error at fail
@@ -19,7 +20,8 @@ function connect($host, $db, $user, $password)
 	} catch (PDOException $e) {
 			die($e->getMessage());
 		}
-	}
-	return connect($host, $db, $user, $password);
+}
+	
+return connect($host, $db, $user, $password);
 
 ?>
