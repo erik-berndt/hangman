@@ -2,8 +2,8 @@
 //: set variables for database connection data
 $host     = 'localhost';
 $db       = 'games';
-$user     = 'root';
-$password = '';
+$user     = 'erik';
+$password = '321null';
 
 function connect($host, $db, $user, $password)
 	{
