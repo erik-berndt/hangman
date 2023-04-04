@@ -1,16 +1,21 @@
-<!DOCTYPE html>
+<?php
+include "./randomPhrase.php";
+?>
 
-<html>
-  <head>
-	<link rel="stylesheet" type="text/css" href="public/css/style.css">
-	<link rel="icon" type="image/x-icon" href="public/images/favicon.ico">
-		<title>pampelguess</title>
-  </head>
-	<body>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>Document</title>
+</head>
+<body>
 
 
 <?php
-include "./randomPhrase.php";
 
 //: start new SESSION - get random phrase
 if (!isset($_SESSION['randPhrase'])) {
@@ -19,12 +24,12 @@ if (!isset($_SESSION['randPhrase'])) {
 }
 
 //: create arrays for better comparabiliy
-$alpha   = str_split("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+$alpha = str_split("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
 $letters = str_split($_SESSION['randPhrase']);
 
 //: declare string variables
-$guess   = '';
-$result  = '';
+$guess = '';
+$result = '';
 
 //: outsourced check engine
 include('./checkMatches.php');
@@ -39,21 +44,20 @@ echo "
 
 
 ?>
-			<div>	
-				<form method="POST">
-				<div class="form">	
-					<div>
-						<input id="guess" type="text" name="guess"  autocomplete="off" size="1" 
-							minlength="1" maxlength="1" placeholder="🤔" autofocus><br>
-					</div>
-					<div>
-				 		<input id="solution" type="text" name="solution" autocomplete="off" placeholder="ich weiss es">
-					</div>
-					<button type="submit" hidden></button> 
-				</div>
-				</form>
-			</div>
-		</div>
-	</body>
+<div>
+    <form method="POST">
+        <div class="form">
+            <div>
+                <input id="guess" type="text" name="guess" autocomplete="off" size="1"
+                       minlength="1" maxlength="1" placeholder="🤔" autofocus><br>
+            </div>
+            <div>
+                <input id="solution" type="text" name="solution" autocomplete="off" placeholder="ich weiss es">
+            </div>
+            <button type="submit" hidden></button>
+        </div>
+    </form>
+</div>
+</body>
 </html>
 
